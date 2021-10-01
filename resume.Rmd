@@ -1,6 +1,6 @@
 ---
-title: Nick Strayer's Resume"
-author: Nick Strayer
+title: Caitlyn McCullers' Resume"
+author: Caitlyn McCullers
 date: "`r Sys.Date()`"
 output:
   pagedown::html_resume:
@@ -35,7 +35,7 @@ position_data <- read_csv('positions.csv') %>%
     # Build some custom sections by collapsing others
     section = case_when(
       section %in% c('research_positions', 'industry_positions') ~ 'positions', 
-      section %in% c('data_science_writings', 'by_me_press') ~ 'writings',
+      section %in% c('data_science_writings', 'academic_articles') ~ 'writings',
       TRUE ~ section
     )
   ) 
@@ -54,11 +54,11 @@ Contact {#contact}
 
 
 
-- <i class="fa fa-envelope"></i> nick.strayer@gmail.com
-- <i class="fa fa-twitter"></i> NicholasStrayer
-- <i class="fa fa-github"></i> github.com/nstrayer
-- <i class="fa fa-link"></i> [nickstrayer.me](http://nickstrayer.me/)
-- <i class="fa fa-phone"></i> (734) 645-0110
+- <i class="fa fa-envelope"></i> caitlynmccullers@yahoo.com
+- <i class="fa fa-twitter"></i> CaitMcCullers
+- <i class="fa fa-github"></i> github.com/ctmccull
+- <i class="fa fa-link"></i> [ctmccull.me](https://github.com/ctmccull/ctmccull-lab05)
+- <i class="fa fa-phone"></i> (623) 363-6998
 
 
 
@@ -69,13 +69,11 @@ Language Skills {#skills}
 ```{r}
 skills <- tribble(
   ~skill,               ~level,
-  "R",                  5,
-  "Javascript (d3.js)", 4.5,
-  "Python",             4,
-  "Bash",               3.5,
-  "SQL",                3,
-  "C++",                3,
-  "AWK",                3
+  "R",                  4.75,
+  "SPSS",              4.5,
+  "Excel",             4,
+  "SAS",               2,
+  "SQL",                1.5,
 )
 build_skill_bars(skills)
 ```
@@ -96,7 +94,7 @@ All projects available at `github.com/nstrayer/<name>`
 More info {#more-info}
 --------------------------------------------------------------------------------
 
-See full CV at nickstrayer.me/cv for more complete list of positions and publications.
+See full CV at ctmccull.me/cv for more complete list of positions and publications.
 
 
 Disclaimer {#disclaimer}
@@ -114,13 +112,13 @@ Last updated on `r Sys.Date()`.
 Main
 ================================================================================
 
-Nick Strayer {#title}
+Caitlyn McCullers {#title}
 --------------------------------------------------------------------------------
 
 ```{r}
-intro_text <- "I have made [visualizations viewed by hundreds of thousands of people](https://www.nytimes.com/interactive/2016/08/26/us/college-student-migration.html), [sped up query times for 25 terabytes of data by an average of 4,800 times](https://livefreeordichotomize.com/2019/06/04/using_awk_and_r_to_parse_25tb/), and built [packages for R](https://github.com/nstrayer/shinysense) that let you [do magic](http://nickstrayer.me/dataDayTexas/).
+intro_text <- "I have experience in collecting, cleaning, analyzing, and reporting data in university, nonprofit, and corporate settings.
 
-Currently searching for a data science position that allows me to build tools using visualization and machine learning to help people explore and understand their data. 
+Currently searching for a data science position that allows me to evaluate programs and their effectiveness. 
 "
 
 
